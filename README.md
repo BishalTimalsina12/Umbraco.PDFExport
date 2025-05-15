@@ -69,8 +69,8 @@ Add this to your `appsettings.json` file to enable API key authentication for th
    - Download the PDF using the provided button
 
 2. **API Endpoints**:
-   - `GET /umbraco/backoffice/api/PdfExport/GeneratePdf?contentId={id}` - Generate PDF for a single node
-   - `GET /umbraco/backoffice/api/PdfExport/ExportAllNodes?apiKey={key}` - Generate a single PDF with all content nodes
+   - `GET /umbraco/backoffice/PdfExport/PdfExportDashboard/GeneratePdf?contentId={id}` - Generate PDF for a single node
+   - `GET /umbraco/backoffice/PdfExport/PdfExportDashboard/ExportAllNodes?apiKey={key}` - Generate a single PDF with all content nodes
 
 ## Extending the Package
 
