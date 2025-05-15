@@ -1,6 +1,7 @@
-# Umbraco PDF Export
+# Umbraco.PDFExport
 
 Umbraco package that enables content editors and developers to export Umbraco content nodes as professionally formatted PDF documents.
+<img src="https://raw.githubusercontent.com/BishalTimalsina12/Umbraco.PDFExport/refs/heads/main/example.png" alt="Umbraco PDF Export" style="max-width:100%; height:auto;" />
 
 ## Features
 
