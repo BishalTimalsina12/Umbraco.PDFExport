@@ -90,4 +90,4 @@ Submit a pull request
 
 Login:
 admin@example.com  
-1234567890
+pw: 1234567890
