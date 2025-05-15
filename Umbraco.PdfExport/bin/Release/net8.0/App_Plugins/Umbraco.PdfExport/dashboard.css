@@ -1,0 +1,204 @@
+.umb-dashboard-box {
+    margin-bottom: 20px;
+}
+
+.umb-dashboard-box__header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e9e9eb;
+}
+
+.umb-dashboard-box__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.umb-dashboard-box__content {
+    padding: 20px;
+}
+
+.umb-tree-item {
+    margin-bottom: 5px;
+}
+
+.umb-tree-item__inner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.umb-tree-item__icon {
+    margin-right: 10px;
+}
+
+.umb-tree-item__label {
+    flex-grow: 1;
+}
+
+.umb-tree-item__actions {
+    margin-left: 10px;
+}
+
+.umb-tree-item__children {
+    margin-left: 20px;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.pdf-export-dashboard {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.umb-dashboard--modern {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 0;
+}
+
+.umb-dashboard__header--centered {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.pdf-export-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+}
+
+.pdf-export-subtitle {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.pdf-export-content {
+    display: block;
+    align-items: stretch;
+}
+
+.umb-panel--modern {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #e9e9eb;
+    background: #fff;
+    margin-bottom: 24px;
+    max-width: 100%;
+    box-shadow: none;
+}
+
+.umb-panel__header {
+    border-bottom: 1px solid #e9e9eb;
+    padding: 16px 24px;
+    background: #f5f6fa;
+    border-radius: 4px 4px 0 0;
+}
+
+.umb-panel__content {
+    padding: 24px;
+}
+
+.pdf-export-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.pdf-export-btn {
+    min-width: 160px;
+    font-size: 1rem;
+}
+
+.pdf-preview {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.pdf-size {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.pdf-object {
+    border: 1px solid #e9e9eb;
+    border-radius: 4px;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.pdf-download-bar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .pdf-export-dashboard {
+        max-width: 100vw;
+        padding: 0;
+    }
+    .umb-panel--modern {
+        max-width: 100vw;
+        padding: 0;
+    }
+}
+@media (max-width: 700px) {
+    .umb-panel__content {
+        padding: 12px;
+    }
+    .pdf-object {
+        height: 250px;
+    }
+    .umb-dashboard__header--centered {
+        text-align: center;
+    }
+}
+
+.pdf-export-dashboard-container {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pdf-export-instructions {
+    background: #f5f6fa;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 0 0 18px 0;
+    color: #555;
+    font-size: 1rem;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.pdf-export-header-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.25em;
+}
+
+.pdf-export-header-icon {
+    font-size: 2.1rem;
+    color: #d32f2f;
+    display: flex;
+    align-items: center;
+}
+
+.pdf-export-title-underline {
+    width: 48px;
+    height: 4px;
+    background: linear-gradient(90deg, #d32f2f 0%, #ff9800 100%);
+    border-radius: 2px;
+    margin-bottom: 12px;
+} 

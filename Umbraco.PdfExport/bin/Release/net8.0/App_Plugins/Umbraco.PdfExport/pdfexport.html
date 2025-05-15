@@ -1,0 +1,60 @@
+<div ng-controller="PdfExport.DashboardController" class="pdf-export-dashboard">
+    <div class="umb-dashboard umb-dashboard--modern pdf-export-dashboard-container">
+        <div class="umb-dashboard__header umb-dashboard__header--centered">
+            <div class="pdf-export-header-row">
+                <span class="pdf-export-header-icon"><i class="icon-file-pdf"></i></span>
+                <h1 class="pdf-export-title">Export PDF</h1>
+            </div>
+            <div class="pdf-export-title-underline"></div>
+            <p class="pdf-export-subtitle">Generate and preview a PDF for this content node.</p>
+        </div>
+      
+        <div class="umb-dashboard__content pdf-export-content">
+            <div class="umb-panel umb-panel--modern">
+                <div class="umb-panel__header">
+                    <h3>Export PDF</h3>
+                </div>
+                <div class="umb-panel__content">
+                    <div ng-if="nodeId">
+                        <div class="pdf-export-instructions">
+                            <p>
+                                <strong>How to use:</strong><br>
+                                Click <b>Generate PDF</b> to create a PDF of this content node. Once generated, you can preview the PDF below and download it to your computer.<br>
+                                If you make changes to the content, click <b>Generate PDF</b> again to update the preview and download.
+                            </p>
+                        </div>
+                        <div class="pdf-export-actions">
+                            <button class="btn btn-success pdf-export-btn" ng-click="generatePdf()" ng-disabled="isGenerating">
+                                <i class="icon-download"></i> Generate PDF
+                            </button>
+                        </div>
+                        <div class="alert alert-info" ng-if="isGenerating">
+                            <i class="icon-spinner icon-spin"></i> Generating PDF...
+                        </div>
+                        <div class="alert alert-success" ng-if="generationSuccess">
+                            <i class="icon-check"></i> PDF generated successfully!
+                        </div>
+                        <div class="alert alert-danger" ng-if="generationError">
+                            <i class="icon-delete"></i> {{generationError}}
+                        </div>
+                        <div ng-if="pdfUrl" class="pdf-preview">
+                            <h4>Preview</h4>
+                            <p class="pdf-size">File size: <strong>{{pdfSize | number}} bytes</strong></p>
+                            <object ng-attr-data="{{pdfUrl}}" type="application/pdf" width="100%" height="400px" class="pdf-object">
+                                <p>Your browser does not support PDF preview. <a ng-href="{{pdfUrl}}" target="_blank">Download PDF</a></p>
+                            </object>
+                            <div class="pdf-download-bar">
+                                <a class="btn btn-outline-primary" ng-href="{{pdfUrl}}" download="export.pdf">
+                                    <i class="icon-download"></i> Download PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="!nodeId" class="alert alert-info">
+                        <i class="icon-info"></i> No content node selected.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

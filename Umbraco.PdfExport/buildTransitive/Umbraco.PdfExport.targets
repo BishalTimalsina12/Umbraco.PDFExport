@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <UmbracoPdfExportContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\Umbraco.PdfExport\**\*.*</UmbracoPdfExportContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopyUmbracoPdfExportAssets" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <UmbracoPdfExportContentFiles Include="$(UmbracoPdfExportContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying Umbraco.PdfExport files: $(UmbracoPdfExportContentFilesPath) - #@(UmbracoPdfExportContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(UmbracoPdfExportContentFiles)" DestinationFiles="@(UmbracoPdfExportContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\Umbraco.PdfExport\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearUmbracoPdfExportAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <UmbracoPdfExportDir Include="$(MSBuildProjectDirectory)\App_Plugins\Umbraco.PdfExport\" />
+    </ItemGroup>
+    <Message Text="Clear old Umbraco.PdfExport data" Importance="high" />
+    <RemoveDir Directories="@(UmbracoPdfExportDir)" />
+  </Target>
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Umbraco.PDFExport</id>
+    <version>1.0.0</version>
+    <title>Umbraco.PDFExport</title>
+    <authors>Umbraco.PdfExport</authors>
+    <description>PDF Export package for Umbraco</description>
+    <tags>umbraco plugin package,umbraco-marketplace</tags>
+    <repository type="git" commit="c66be19227035b00a6051de9032e86663099f821" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="PDFsharp" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="PdfSharpCore" version="1.3.67" exclude="Build,Analyzers" />
+        <dependency id="Umbraco.Cms.Web.BackOffice" version="13.5.2" exclude="Build,Analyzers" />
+        <dependency id="Umbraco.Cms.Web.Website" version="13.5.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\zaaks\Packstract\Umbraco.PdfExport\bin\Debug\net8.0\Umbraco.PdfExport.dll" target="lib\net8.0\Umbraco.PdfExport.dll" />
+    <file src="D:\zaaks\Packstract\Umbraco.PdfExport\App_Plugins\Umbraco.PdfExport\dashboard.css" target="App_Plugins\Umbraco.PdfExport\dashboard.css" />
+    <file src="D:\zaaks\Packstract\Umbraco.PdfExport\App_Plugins\Umbraco.PdfExport\package.manifest" target="App_Plugins\Umbraco.PdfExport\package.manifest" />
+    <file src="D:\zaaks\Packstract\Umbraco.PdfExport\App_Plugins\Umbraco.PdfExport\pdfexport.controller.js" target="App_Plugins\Umbraco.PdfExport\pdfexport.controller.js" />
+    <file src="D:\zaaks\Packstract\Umbraco.PdfExport\App_Plugins\Umbraco.PdfExport\pdfexport.html" target="App_Plugins\Umbraco.PdfExport\pdfexport.html" />
+    <file src="D:\zaaks\Packstract\Umbraco.PdfExport\buildTransitive\Umbraco.PdfExport.targets" target="buildTransitive\Umbraco.PdfExport.targets" />
+  </files>
+</package>

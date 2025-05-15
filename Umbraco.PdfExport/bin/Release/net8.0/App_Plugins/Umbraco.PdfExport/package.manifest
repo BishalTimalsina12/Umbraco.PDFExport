@@ -1,0 +1,20 @@
+{
+  "contentApps": [
+    {
+      "name": "PDF Export",
+      "alias": "pdfExportContentApp",
+      "weight": 0,
+      "icon": "icon-file-pdf",
+      "view": "~/App_Plugins/Umbraco.PdfExport/pdfexport.html",
+      "show": [
+        "+content/*"
+      ]
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/Umbraco.PdfExport/pdfexport.controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/Umbraco.PdfExport/dashboard.css"
+  ]
+}
