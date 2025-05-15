@@ -1,8 +1,9 @@
 # Umbraco.PDFExport
 
-Umbraco package that enables content editors and developers to export Umbraco content nodes as professionally formatted PDF documents.
-<img src="https://raw.githubusercontent.com/BishalTimalsina12/Umbraco.PDFExport/refs/heads/main/example.png" alt="Umbraco PDF Export" style="max-width:100%; height:auto;" />
+Easily export any content node in your Umbraco site to a well-formatted PDF — whether it’s a single page or your entire content tree
 
+![Overview](https://raw.githubusercontent.com/BishalTimalsina12/Umbraco.PDFExport/refs/heads/main/example.png)
+*PDF export in action*
 ## Features
 
 - **Content Apps Integration**: Access PDF export functionality directly from any content node via a dedicated tab
@@ -22,14 +23,8 @@ Umbraco package that enables content editors and developers to export Umbraco co
   - Proper indentation and spacing for nested items
   - Multi-page support with automatic pagination
   - Clean HTML tag stripping for RTE content
-  - 
-- **Developer-Friendly API**: Built with a clean architecture for easy extension and customization
 
-## Stack
 
-- Built for **Umbraco 13+**
-- **PDFsharp and PdfSharpCore**: Industry-standard PDF generation libraries for .NET
-- **Clean Service Architecture**: Well-structured services with dependency injection
 
 ## Installation
 
@@ -85,14 +80,12 @@ The `PdfGeneratorService` uses a robust approach to handle different property ty
 
 
 
-## Support
+## Need Help?
 
-For issues, feature requests, or contributions:
-- Open an issue on the project repository
-- Submit a pull request 
+Found a bug? Want to suggest a feature or contribute?
+
+Open an issue on GitHub
+
+Submit a pull request
 
 
-
----
-**Author:** Bishal Tim 
-**License:** MIT 
