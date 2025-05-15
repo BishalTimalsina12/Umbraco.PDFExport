@@ -29,7 +29,6 @@ Umbraco package that enables content editors and developers to export Umbraco co
 - Built for **Umbraco 13+**
 - **PDFsharp and PdfSharpCore**: Industry-standard PDF generation libraries for .NET
 - **Clean Service Architecture**: Well-structured services with dependency injection
-- **Modern AngularJS Backoffice Integration**: Seamless integration with the Umbraco backoffice
 
 ## Installation
 
@@ -89,14 +88,10 @@ The `PdfGeneratorService` uses a robust approach to handle different property ty
 
 For issues, feature requests, or contributions:
 - Open an issue on the project repository
-- Submit a pull request with enhancements or fixes
+- Submit a pull request 
 
-## Roadmap
 
-- Additional PDF styling options
-- Configurable templates for different content types
-- Custom fonts support
 
 ---
-**Author:** Bishal Tim  
+**Author:** Bishal Tim 
 **License:** MIT 
