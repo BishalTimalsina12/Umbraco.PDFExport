@@ -88,4 +88,6 @@ Open an issue on GitHub
 
 Submit a pull request
 
-
+Login:
+admin@example.com  
+1234567890
